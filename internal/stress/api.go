@@ -31,6 +31,8 @@ func (a *API) StressAPI() {
 
 		endPeriod := time.NewTimer(cycleDuration)
 		periodicCallTimer := time.NewTimer(periodDuration)
+
+	period:
 		for {
 			select {
 			case <-periodicCallTimer.C:
@@ -40,7 +42,7 @@ func (a *API) StressAPI() {
 					fmt.Printf("%s call faced following error:\n%s\n", a.Name, err.Error())
 				}
 			case <-endPeriod.C:
-				return
+				break period
 			}
 		}
 	}
