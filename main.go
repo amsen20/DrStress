@@ -10,12 +10,14 @@ import (
 
 func main() {
 	pathPtr := flag.String("path", "", "path to stress load data")
+	flag.Parse()
+
 	loadData, err := load.GetData(*pathPtr)
 	if err != nil {
 		fmt.Printf("could not start stressing due to following error: %s\n", err.Error())
 	}
 
-	var wg *sync.WaitGroup
+	var wg sync.WaitGroup
 	for _, API := range loadData.APIs {
 		wg.Add(1)
 		go func(api *stress.API) {
