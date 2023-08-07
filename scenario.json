@@ -1,0 +1,124 @@
+{
+    "apis": [
+        {
+            "name": "A",
+            "endpoint": "http://172.20.2.51:30000/ping",
+            "intervals": [
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 32000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 32000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 208000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 100,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 100,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 100,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 16000
+                }
+            ]
+        },
+        {
+            "name": "B",
+            "endpoint": "http://172.20.2.51:30001/ping",
+            "intervals": [
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 400,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 64000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 32000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 200,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 64000
+                },
+                {
+                    "api_call_period": 400,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 128000
+                },
+                {
+                    "api_call_period": 400,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 300,
+                    "cycle_length": 96000
+                }
+            ]
+        }
+    ]
+}
