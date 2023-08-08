@@ -5,6 +5,14 @@
             "endpoint": "http://172.20.2.32:30000/ping",
             "intervals": [
                 {
+                    "api_call_period": 40.0,
+                    "cycle_length": 240000
+                },
+                {
+                    "api_call_period": 66.66666666666667,
+                    "cycle_length": 240000
+                },
+                {
                     "api_call_period": 33.333333333333336,
                     "cycle_length": 120000
                 },
@@ -13,7 +21,7 @@
                     "cycle_length": 120000
                 },
                 {
-                    "api_call_period": 200.0,
+                    "api_call_period": 50.0,
                     "cycle_length": 120000
                 },
                 {
@@ -21,12 +29,12 @@
                     "cycle_length": 120000
                 },
                 {
-                    "api_call_period": 40.0,
-                    "cycle_length": 480000
+                    "api_call_period": 50.0,
+                    "cycle_length": 120000
                 },
                 {
-                    "api_call_period": 50.0,
-                    "cycle_length": 240000
+                    "api_call_period": 40.0,
+                    "cycle_length": 120000
                 }
             ]
         },
@@ -35,23 +43,11 @@
             "endpoint": "http://172.20.2.32:30001/ping",
             "intervals": [
                 {
-                    "api_call_period": 40.0,
-                    "cycle_length": 120000
-                },
-                {
-                    "api_call_period": 33.333333333333336,
-                    "cycle_length": 120000
-                },
-                {
-                    "api_call_period": 40.0,
+                    "api_call_period": 66.66666666666667,
                     "cycle_length": 120000
                 },
                 {
                     "api_call_period": 50.0,
-                    "cycle_length": 360000
-                },
-                {
-                    "api_call_period": 40.0,
                     "cycle_length": 120000
                 },
                 {
@@ -59,7 +55,23 @@
                     "cycle_length": 240000
                 },
                 {
-                    "api_call_period": 33.333333333333336,
+                    "api_call_period": 50.0,
+                    "cycle_length": 120000
+                },
+                {
+                    "api_call_period": 66.66666666666667,
+                    "cycle_length": 120000
+                },
+                {
+                    "api_call_period": 100.0,
+                    "cycle_length": 240000
+                },
+                {
+                    "api_call_period": 66.66666666666667,
+                    "cycle_length": 120000
+                },
+                {
+                    "api_call_period": 100.0,
                     "cycle_length": 120000
                 }
             ]
@@ -70,10 +82,6 @@
             "intervals": [
                 {
                     "api_call_period": 66.66666666666667,
-                    "cycle_length": 840000
-                },
-                {
-                    "api_call_period": 100.0,
                     "cycle_length": 120000
                 },
                 {
@@ -82,6 +90,22 @@
                 },
                 {
                     "api_call_period": 66.66666666666667,
+                    "cycle_length": 360000
+                },
+                {
+                    "api_call_period": 100.0,
+                    "cycle_length": 120000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 240000
+                },
+                {
+                    "api_call_period": 66.66666666666667,
+                    "cycle_length": 120000
+                },
+                {
+                    "api_call_period": 100.0,
                     "cycle_length": 120000
                 }
             ]
@@ -91,32 +115,32 @@
             "endpoint": "http://172.20.2.32:30003/ping ",
             "intervals": [
                 {
-                    "api_call_period": 100.0,
-                    "cycle_length": 120000
-                },
-                {
                     "api_call_period": 200.0,
-                    "cycle_length": 360000
-                },
-                {
-                    "api_call_period": 100.0,
-                    "cycle_length": 120000
-                },
-                {
-                    "api_call_period": 200.0,
-                    "cycle_length": 120000
-                },
-                {
-                    "api_call_period": 100.0,
                     "cycle_length": 240000
                 },
                 {
+                    "api_call_period": 100.0,
+                    "cycle_length": 120000
+                },
+                {
+                    "api_call_period": 200.0,
+                    "cycle_length": 240000
+                },
+                {
+                    "api_call_period": 100.0,
+                    "cycle_length": 120000
+                },
+                {
                     "api_call_period": 200.0,
                     "cycle_length": 120000
                 },
                 {
                     "api_call_period": 100.0,
                     "cycle_length": 120000
+                },
+                {
+                    "api_call_period": 200.0,
+                    "cycle_length": 240000
                 }
             ]
         }
