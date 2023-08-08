@@ -2,121 +2,141 @@
     "apis": [
         {
             "name": "A",
-            "endpoint": "http://172.20.2.51:30000/ping",
+            "endpoint": "a.com",
             "intervals": [
                 {
-                    "api_call_period": 300,
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 64000
+                },
+                {
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 100.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 64000
+                },
+                {
+                    "api_call_period": 100.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 48000
+                },
+                {
+                    "api_call_period": 100.0,
                     "cycle_length": 32000
                 },
                 {
-                    "api_call_period": 200,
+                    "api_call_period": 50.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 100.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 50.0,
                     "cycle_length": 32000
                 },
                 {
-                    "api_call_period": 300,
+                    "api_call_period": 100.0,
                     "cycle_length": 16000
                 },
                 {
-                    "api_call_period": 200,
-                    "cycle_length": 16000
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 32000
                 },
                 {
-                    "api_call_period": 300,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 200,
-                    "cycle_length": 208000
-                },
-                {
-                    "api_call_period": 300,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 200,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 100,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 200,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 300,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 200,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 100,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 200,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 100,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 200,
-                    "cycle_length": 16000
+                    "api_call_period": 50.0,
+                    "cycle_length": 32000
                 }
             ]
         },
         {
             "name": "B",
-            "endpoint": "http://172.20.2.51:30001/ping",
+            "endpoint": "b.com",
             "intervals": [
                 {
-                    "api_call_period": 300,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 400,
-                    "cycle_length": 16000
-                },
-                {
-                    "api_call_period": 300,
-                    "cycle_length": 64000
-                },
-                {
-                    "api_call_period": 200,
+                    "api_call_period": 33.333333333333336,
                     "cycle_length": 32000
                 },
                 {
-                    "api_call_period": 300,
+                    "api_call_period": 25.0,
                     "cycle_length": 16000
                 },
                 {
-                    "api_call_period": 200,
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 96000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 48000
+                },
+                {
+                    "api_call_period": 33.333333333333336,
                     "cycle_length": 16000
                 },
                 {
-                    "api_call_period": 300,
+                    "api_call_period": 50.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 50.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 25.0,
+                    "cycle_length": 16000
+                },
+                {
+                    "api_call_period": 33.333333333333336,
                     "cycle_length": 64000
                 },
                 {
-                    "api_call_period": 400,
+                    "api_call_period": 25.0,
                     "cycle_length": 16000
                 },
                 {
-                    "api_call_period": 300,
-                    "cycle_length": 128000
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 80000
                 },
                 {
-                    "api_call_period": 400,
+                    "api_call_period": 50.0,
                     "cycle_length": 16000
                 },
                 {
-                    "api_call_period": 300,
-                    "cycle_length": 96000
+                    "api_call_period": 33.333333333333336,
+                    "cycle_length": 32000
                 }
             ]
         }
