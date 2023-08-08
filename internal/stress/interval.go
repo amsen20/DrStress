@@ -1,6 +1,6 @@
 package stress
 
 type PeriodicInterval struct {
-	Length        int `json:"cycle_length"`    // ms
-	ApiCallPeriod int `json:"api_call_period"` // ms
+	Length        float64 `json:"cycle_length"`    // ms
+	ApiCallPeriod float64 `json:"api_call_period"` // ms
 }
