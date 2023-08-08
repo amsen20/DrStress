@@ -42,12 +42,12 @@ func (a *API) StressAPI() {
 			select {
 			case <-periodicCallTimer.C:
 				periodicCallTimer.Reset(periodDuration)
-				err := a.callAPI()
-				if err != nil {
-					fmt.Printf("%s call faced following error:\n%s\n", a.Name, err.Error())
-				} else {
-					fmt.Printf("%s call OK\n", a.Name)
-				}
+				_ = a.callAPI()
+				// if err != nil {
+				// 	// fmt.Printf("%s call faced following error:\n%s\n", a.Name, err.Error())
+				// } else {
+				// 	// fmt.Printf("%s call OK\n", a.Name)
+				// }
 			case <-endPeriod.C:
 				fmt.Printf("finished %s", a.Name)
 				break period
