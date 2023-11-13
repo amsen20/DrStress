@@ -26,4 +26,8 @@ func main() {
 		}(API)
 	}
 	wg.Wait()
+
+	for _, API := range loadData.APIs {
+		fmt.Println(API.GetStatistics())
+	}
 }
