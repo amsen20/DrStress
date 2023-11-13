@@ -2,7 +2,7 @@
     "apis": [
         {
             "name": "A",
-            "endpoint": "http://172.20.2.32:30000/ping",
+            "endpoint": "http://localhost:30000/ping",
             "intervals": [
                 {
                     "api_call_period": 66.66666666666667,
@@ -24,7 +24,7 @@
         },
         {
             "name": "B",
-            "endpoint": "http://172.20.2.32:30001/ping",
+            "endpoint": "http://localhost:30001/ping",
             "intervals": [
                 {
                     "api_call_period": 50.0,
@@ -62,7 +62,7 @@
         },
         {
             "name": "C",
-            "endpoint": "http://172.20.2.32:30002/ping",
+            "endpoint": "http://localhost:30002/ping",
             "intervals": [
                 {
                     "api_call_period": 66.66666666666667,
@@ -88,7 +88,7 @@
         },
         {
             "name": "D",
-            "endpoint": "http://172.20.2.32:30003/ping",
+            "endpoint": "http://localhost:30003/ping",
             "intervals": [
                 {
                     "api_call_period": 200.0,

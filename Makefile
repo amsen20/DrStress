@@ -10,9 +10,9 @@ mid:
 	make default
 	./stress --path scenarios/mid.json
 
-high: 
+hard: 
 	make default
-	./stress --path scenarios/high.json
+	./stress --path scenarios/hard.json
 
 clean:
 	rm -rf stress
