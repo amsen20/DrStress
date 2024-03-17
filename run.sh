@@ -17,11 +17,13 @@ function run_scenario() {
 echo "running normal scenarios ..."
 for filename in $normal_scenarios_path; do
   run_scenario $filename
+  sleep 5m
 done
 echo "normal scenarios are successfully ran ..."
 
 echo "running wavy scenarios ... "
 for filename in $wavy_scenarios_path; do
   run_scenario $filename
+  sleep 5m
 done
 echo "wavy scenarios are successfully ran ..."
