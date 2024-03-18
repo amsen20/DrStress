@@ -13,8 +13,8 @@ echo "DrStress binary has successfully been built"
 function run_scenario() {
   echo "scenario name: $1"
   echo "start time: $(date '+%Y-%m-%d %H:%M:%S')"
-#  ./stress --path $1
-  kubectl rollout restart $scheduler_deployment_name -n $namespace
+  ./stress --path $1
+  kubectl rollout restart deploy $scheduler_deployment_name -n $namespace
   echo "end time: $(date '+%Y-%m-%d %H:%M:%S')"
 }
 
