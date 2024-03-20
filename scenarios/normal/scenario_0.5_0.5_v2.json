@@ -1,0 +1,140 @@
+{
+  "apis": [
+    {
+      "name": "A",
+      "endpoint": "http://localhost:30000/ping",
+      "intervals": [
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 180000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 66.66666666666667,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 270000
+        },
+        {
+          "api_call_period": 66.66666666666667,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "endpoint": "http://localhost:30001/ping",
+      "intervals": [
+        {
+          "api_call_period": 50.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 66.66666666666667,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 180000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 66.66666666666667,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 180000
+        }
+      ]
+    },
+    {
+      "name": "C",
+      "endpoint": "http://localhost:30002/ping",
+      "intervals": [
+        {
+          "api_call_period": 50.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 66.66666666666667,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 360000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        },
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 180000
+        },
+        {
+          "api_call_period": 100.0,
+          "cycle_length": 90000
+        }
+      ]
+    },
+    {
+      "name": "D",
+      "endpoint": "http://localhost:30003/ping",
+      "intervals": [
+        {
+          "api_call_period": 200.0,
+          "cycle_length": 1080000
+        }
+      ]
+    }
+  ]
+}
