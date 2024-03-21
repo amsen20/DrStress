@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:  custom-scheduler
+  namespace: custom-scheduler
+  labels:
+    app:  custom-scheduler
+spec:
+  selector:
+    matchLabels:
+      app: custom-scheduler
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app:  custom-scheduler
+    spec:
+      nodeName: "custom-scheduler-debugging"
+      serviceAccountName: scheduling
+      volumes:
+        - name: config-map
+          configMap:
+            name: scheduler-general-config
+      containers:
+      - name:  custom-scheduler
+        image:  noisyboy9/custom_k8s_scheduler:latest
+        imagePullPolicy: Always
+        volumeMounts:
+        - name: config-map
+          mountPath: configs/general.yaml
+          subPath: config.yaml
+          readOnly: true
+      restartPolicy: Always
