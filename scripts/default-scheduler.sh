@@ -13,7 +13,7 @@ function setup_env() {
 
 
 function execute_scenarios() {
-  echo "execute_scenarios"
+  echo "execute_scenarios for kube-scheduler"
 }
 
 function cleanup_env() {
