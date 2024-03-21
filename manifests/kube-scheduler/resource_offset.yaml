@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: resource-offset
+  namespace: kube-schedule
+  labels:
+    app: resource-offset
+spec:
+  selector:
+    matchLabels:
+      app: resource-offset
+  template:
+    metadata:
+      labels:
+        app: resource-offset
+    spec:
+      nodeSelector:
+        nodetype: "edge"
+      containers:
+        - name: resource-offset
+          image: noisyboy9/scheduler_load_test
+          resources:
+            limits:
+              memory: 1Gi
+              cpu: 1000m
+            requests:
+              memory: 1Gi
+              cpu: 1000m

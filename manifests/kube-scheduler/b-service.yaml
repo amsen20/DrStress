@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: b-service
+  namespace: kube-schedule
+  annotations:
+    prometheus.io/port: "service-port"
+    prometheus.io/scrape: "true"
+  labels:
+    app.kubernetes.io/part-of: dms
+spec:
+  selector:
+    app: B-app
+  type: NodePort
+  ports:
+    - name: service-port
+      protocol: TCP
+      port: 80
+      nodePort: 30001
+      targetPort: "go-app-port"
