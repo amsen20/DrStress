@@ -317,7 +317,7 @@ $RECYCLE.BIN/
 *.lnk
 
 ### Zsh ###
-# Zsh compiled script + zrecompile backup
+# Zsh compiled scripts + zrecompile backup
 *.zwc
 *.zwc.old
 
