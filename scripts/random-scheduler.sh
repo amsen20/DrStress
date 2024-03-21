@@ -7,6 +7,7 @@ function run_random_scheduler() {
 }
 
 function setup_env() {
+  echo "************************************************************************"
   echo "setting up env for random-scheduler"
   kubectl apply -f $manifests_path
 }
@@ -22,4 +23,5 @@ function cleanup_env() {
 
   echo "clean up complete, going to sleep (5m)"
   sleep 5m
+  echo "************************************************************************"
 }
