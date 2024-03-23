@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: c-deployment
-  namespace: cloud-first-scheduler-namespace
+  namespace: cloud-first-scheduler
   labels:
     app: C-app
 spec:

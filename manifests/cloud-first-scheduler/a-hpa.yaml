@@ -2,7 +2,7 @@ kind: HorizontalPodAutoscaler
 apiVersion: autoscaling/v2
 metadata:
   name: a-hpa
-  namespace: cloud-first-scheduler-namespace
+  namespace: cloud-first-scheduler
 spec:
   scaleTargetRef:
     apiVersion: apps/v1

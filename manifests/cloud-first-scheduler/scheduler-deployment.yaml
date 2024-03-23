@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  custom-scheduler
-  namespace: cloud-first-scheduler-namespace
+  namespace: cloud-first-scheduler
   labels:
     app:  custom-scheduler
 spec:
