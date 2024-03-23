@@ -1,14 +1,9 @@
 normal_scenarios_path=$(realpath "$(pwd)/scenarios/normal")
 wavy_scenarios_path=$(realpath "$(pwd)/scenarios/wavy")
 
-function run_scenario() {
-  echo "----------------------------------------------------"
-  echo "scenario name: $1"
-  echo "start time: $(date '+%Y-%m-%d %H:%M:%S')"
-#  ./stress --path $1
-  echo "./stress --path $1"
-  echo "end time: $(date '+%Y-%m-%d %H:%M:%S')"
-  echo "----------------------------------------------------"
+function execute_scenarios() {
+  run_normal_scenarios
+  run_wavy_scenarios
 }
 
 function run_normal_scenarios() {
@@ -17,7 +12,7 @@ function run_normal_scenarios() {
       [ -e "$filename" ] || continue
     run_scenario $filename
     echo "going to sleep between scenarios (5m)"
-#    sleep 5m
+    sleep 5m
   done
   echo "normal scenarios are successfully ran ..."
 }
@@ -29,12 +24,16 @@ function run_wavy_scenarios() {
       [ -e "$filename" ] || continue
     run_scenario $filename
     echo "going to sleep between scenarios (5m)"
-#    sleep 5m
+    sleep 5m
   done
   echo "wavy scenarios are successfully ran ..."
 }
 
-function execute_scenarios() {
-  run_normal_scenarios
-  run_wavy_scenarios
+function run_scenario() {
+  echo "----------------------------------------------------"
+  echo "scenario name: $1"
+  echo "start time: $(date '+%Y-%m-%d %H:%M:%S')"
+  ./stress --path $1
+  echo "end time: $(date '+%Y-%m-%d %H:%M:%S')"
+  echo "----------------------------------------------------"
 }

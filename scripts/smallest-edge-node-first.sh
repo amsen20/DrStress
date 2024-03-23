@@ -1,6 +1,6 @@
 function run_smallest_edge_node_first_scheduler() {
   setup_env_smallest_edge_node_first_scheduler;
-#  sleep 1m
+  sleep 1m
 
   execute_scenarios;
   cleanup_env_smallest_edge_node_first_scheduler;
@@ -19,6 +19,6 @@ function cleanup_env_smallest_edge_node_first_scheduler() {
   kubectl delete --force -f $manifests_path
 
   echo "cleaning up complete, going to sleep (5m)"
-#  sleep 5m
+  sleep 5m
   echo "************************************************************************"
 }
