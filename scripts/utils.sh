@@ -17,7 +17,7 @@ function run_normal_scenarios() {
       [ -e "$filename" ] || continue
     run_scenario $filename
     echo "going to sleep between scenarios (5m)"
-    sleep 5m
+#    sleep 5m
   done
   echo "normal scenarios are successfully ran ..."
 }
@@ -29,7 +29,7 @@ function run_wavy_scenarios() {
       [ -e "$filename" ] || continue
     run_scenario $filename
     echo "going to sleep between scenarios (5m)"
-    sleep 5m
+#    sleep 5m
   done
   echo "wavy scenarios are successfully ran ..."
 }

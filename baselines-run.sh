@@ -9,19 +9,19 @@ source ./scripts/cloud-node.sh
 
 function run() {
   run_default_scheduler > logs/kube_schedule.txt 2> logs/kube_schedule_err.txt
-  sleep 5m
+#  sleep 5m
 
   run_random_scheduler > logs/random_scheduler.txt 2> logs/random_scheduler_err.txt
-  sleep 5m
+#  sleep 5m
 
   run_biggest_edge_node_first_scheduler > logs/biggest_edge_node_first_scheduler.txt 2> logs/biggest_edge_node_first_scheduler_err.txt
-  sleep 5m
+#  sleep 5m
 
   run_smallest_edge_node_first_scheduler > logs/smallest_edge_node_first_scheduler.txt 2> logs/smallest_edge_node_first_scheduler_err.txt
-  sleep 5m
+#  sleep 5m
 
   run_cloud_node_first_scheduler > logs/run_cloud_first_scheduler.txt 2> logs/run_cloud_first_scheduler_err.txt
-  sleep 5m
+#  sleep 5m
 }
 
 run;
