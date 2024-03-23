@@ -14,11 +14,13 @@ function setup_env() {
 
 function execute_scenarios() {
   echo "execute_scenarios for smallest-edge-node-first-scheduler"
+  run_normal_scenarios
+  run_wavy_scenarios
 }
 
 function cleanup_env() {
   echo "cleaning up env after smallest-edge-node-first-scheduler run"
-  kubectl apply -f $manifests_path
+  kubectl delete -f $manifests_path
 
   echo "cleaning up complete, going to sleep (5m)"
   sleep 5m

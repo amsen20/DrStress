@@ -15,6 +15,8 @@ function setup_env() {
 
 function execute_scenarios() {
   echo "execute_scenarios for cloud-first-scheduler"
+  run_normal_scenarios
+  run_wavy_scenarios
 }
 
 function cleanup_env() {

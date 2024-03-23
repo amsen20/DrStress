@@ -15,11 +15,13 @@ function setup_env() {
 
 function execute_scenarios() {
   echo "execute_scenarios for random scheduler"
+  run_normal_scenarios
+  run_wavy_scenarios
 }
 
 function cleanup_env() {
   echo "cleaning up env after random-scheduler run"
-  kubectl apply -f $manifests_path
+  kubectl delete -f $manifests_path
 
   echo "clean up complete, going to sleep (5m)"
   sleep 5m
