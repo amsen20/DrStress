@@ -20,6 +20,7 @@ spec:
       labels:
         app: C-app
     spec:
+      schedulerName: biggest-edge-node-first-scheduler
       containers:
         - image: noisyboy9/scheduler_load_test
           imagePullPolicy: Always

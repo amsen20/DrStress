@@ -12,7 +12,7 @@ data:
       stdout: true
       level: "debug"
 
-    scheduler: 
-      name: custom-scheduler 
+    scheduler:
+      name: biggest-edge-node-first-scheduler
       namespace: biggest-edge-node-first
       algorithm: biggest-fitting-edge-node 

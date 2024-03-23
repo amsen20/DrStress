@@ -21,6 +21,7 @@ spec:
       labels:
         app: D-app
     spec:
+      schedulerName: smallest-fitting-edge-node
       containers:
         - image: noisyboy9/scheduler_load_test
           imagePullPolicy: Always

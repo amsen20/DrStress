@@ -12,7 +12,7 @@ data:
       stdout: true
       level: "debug"
 
-    scheduler: 
-      name: custom-scheduler 
+    scheduler:
+      name: smallest-fitting-edge-node
       namespace: smallest-edge-node-first
       algorithm: smallest-fitting-edge-node 

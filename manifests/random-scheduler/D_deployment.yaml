@@ -21,6 +21,7 @@ spec:
       labels:
         app: D-app
     spec:
+      schedulerName: random-scheduler
       containers:
         - image: noisyboy9/scheduler_load_test
           imagePullPolicy: Always

@@ -13,6 +13,6 @@ data:
       level: "debug"
 
     scheduler: 
-      name: custom-scheduler 
+      name: random-scheduler 
       namespace: random-scheduler
       algorithm: random

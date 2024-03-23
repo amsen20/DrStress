@@ -13,6 +13,6 @@ data:
       level: "debug"
 
     scheduler: 
-      name: custom-scheduler 
+      name: cloud-first-scheduler
       namespace: cloud-first-scheduler-namespace
       algorithm: cloud-first 

@@ -21,6 +21,7 @@ spec:
       labels:
         app: B-app
     spec:
+      schedulerName: cloud-first-scheduler
       containers:
         - image: noisyboy9/scheduler_load_test
           imagePullPolicy: Always
