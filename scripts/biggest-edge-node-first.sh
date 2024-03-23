@@ -1,27 +1,22 @@
 #!/bin/sh
 
-manifests_path="$(pwd)/manifests/biggest-edge-node-first/"
 
 function run_biggest_edge_node_first_scheduler() {
-  setup_env;
+  setup_env_run_biggest_edge_node_first_scheduler;
   execute_scenarios;
-  cleanup_env;
+  cleanup_env_biggest_edge_node_scheduler;
 }
 
-function setup_env() {
+function setup_env_run_biggest_edge_node_first_scheduler() {
+  manifests_path="$(pwd)/manifests/biggest-edge-node-first/"
   echo "************************************************************************"
   echo "setting up env for biggest-edge-node-first"
   kubectl apply -f $manifests_path
 }
 
 
-function execute_scenarios() {
-  echo "execute_scenarios for biggest-edge-node-first"
-  run_normals_scenarios
-  run_wavy_scenarios
-}
-
-function cleanup_env() {
+function cleanup_env_biggest_edge_node_scheduler() {
+  manifests_path="$(pwd)/manifests/biggest-edge-node-first/"
   echo "cleaning up env after biggest-edge-node-first run"
   kubectl delete -f $manifests_path
 

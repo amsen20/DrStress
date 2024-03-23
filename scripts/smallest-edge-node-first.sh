@@ -1,24 +1,18 @@
-manifests_path="../manifests/smallest-edge-node-first/"
 function run_smallest_edge_node_first_scheduler() {
-  setup_env;
+  setup_env_smallest_edge_node_first_scheduler;
   execute_scenarios;
-  cleanup_env;
+  cleanup_env_smallest_edge_node_first_scheduler;
 }
 
-function setup_env() {
+function setup_env_smallest_edge_node_first_scheduler() {
+  manifests_path="$(pwd)/manifests/smallest-edge-node-first/"
   echo "************************************************************************"
   echo "setting up env for smallest-edge-node-first-scheduler"
   kubectl apply -f $manifests_path
 }
 
-
-function execute_scenarios() {
-  echo "execute_scenarios for smallest-edge-node-first-scheduler"
-  run_normal_scenarios
-  run_wavy_scenarios
-}
-
-function cleanup_env() {
+function cleanup_env_smallest_edge_node_first_scheduler() {
+  manifests_path="$(pwd)/manifests/smallest-edge-node-first/"
   echo "cleaning up env after smallest-edge-node-first-scheduler run"
   kubectl delete -f $manifests_path
 

@@ -1,29 +1,21 @@
 #!/bin/bash
 
-manifests_path="$(pwd)/manifests/kube-scheduler/"
-normal_scenarios_path=$(realpath "$(pwd)/scenarios/normal")
-wavy_scenarios_path=$(realpath "$(pwd)/scenarios/wavy")
 
 function run_default_scheduler() {
-  setup_env;
+  setup_env_default_scheduler;
   execute_scenarios;
-  cleanup_env;
+  cleanup_env_default_scheduler;
 }
 
-function setup_env() {
+function setup_env_default_scheduler() {
+  manifests_path="$(pwd)/manifests/kube-scheduler/"
   echo "************************************************************************"
   echo "setting up env for kube-scheduler"
   kubectl apply -f $manifests_path
 }
 
-
-function execute_scenarios() {
-  echo "execute_scenarios for kube-scheduler"
-  run_normal_scenarios
-  run_wavy_scenarios
-}
-
-function cleanup_env() {
+function cleanup_env_default_scheduler() {
+  manifests_path="$(pwd)/manifests/kube-scheduler/"
   echo "cleaning up env after kube-scheduler run"
   kubectl delete -f $manifests_path
 

@@ -5,7 +5,8 @@ function run_scenario() {
   echo "----------------------------------------------------"
   echo "scenario name: $1"
   echo "start time: $(date '+%Y-%m-%d %H:%M:%S')"
-  ./stress --path $1
+#  ./stress --path $1
+  echo "./stress --path $1"
   echo "end time: $(date '+%Y-%m-%d %H:%M:%S')"
   echo "----------------------------------------------------"
 }
@@ -31,4 +32,9 @@ function run_wavy_scenarios() {
     sleep 5m
   done
   echo "wavy scenarios are successfully ran ..."
+}
+
+function execute_scenarios() {
+  run_normal_scenarios
+  run_wavy_scenarios
 }
