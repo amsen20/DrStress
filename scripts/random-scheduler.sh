@@ -1,6 +1,8 @@
 
 function run_random_scheduler() {
   setup_env_random_scheduler;
+#  sleep 1m
+
   execute_scenarios;
   cleanup_env_random_scheduler;
 }

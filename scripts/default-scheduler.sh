@@ -3,6 +3,8 @@
 
 function run_default_scheduler() {
   setup_env_default_scheduler;
+#  sleep 1m
+
   execute_scenarios;
   cleanup_env_default_scheduler;
 }

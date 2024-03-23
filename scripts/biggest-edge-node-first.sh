@@ -3,6 +3,8 @@
 
 function run_biggest_edge_node_first_scheduler() {
   setup_env_run_biggest_edge_node_first_scheduler;
+#  sleep 1m
+
   execute_scenarios;
   cleanup_env_biggest_edge_node_scheduler;
 }

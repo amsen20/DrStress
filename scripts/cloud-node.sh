@@ -1,6 +1,8 @@
 
 function run_cloud_node_first_scheduler() {
   setup_env_cloud_node_first_scheduler;
+#  sleep 1m
+
   execute_scenarios;
   cleanup_env_cloud_node_first_scheduler;
 }
