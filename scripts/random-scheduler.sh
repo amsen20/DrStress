@@ -24,7 +24,7 @@ function execute_scenarios() {
 function cleanup_env_random_scheduler() {
   manifests_path="$(pwd)/manifests/random-scheduler/"
   echo "cleaning up env after random-scheduler run"
-  kubectl delete --force -f $manifests_path
+  kubectl delete  -f $manifests_path
 
   echo "clean up complete, going to sleep (5m)"
   sleep 5m
