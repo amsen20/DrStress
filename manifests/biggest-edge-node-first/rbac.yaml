@@ -9,4 +9,4 @@ roleRef:
 subjects:
   - kind: ServiceAccount
     name: scheduling
-    namespace: custom-scheduler
+    namespace: biggest-edge-node-first

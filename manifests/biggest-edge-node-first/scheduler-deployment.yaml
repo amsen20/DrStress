@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name:  custom-scheduler
-  namespace: custom-scheduler
+  namespace: biggest-edge-node-first
   labels:
     app:  custom-scheduler
 spec:
