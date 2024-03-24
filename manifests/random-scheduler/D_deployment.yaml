@@ -24,7 +24,7 @@ spec:
       schedulerName: random-scheduler
       containers:
         - image: noisyboy9/scheduler_load_test
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           name: scheduler-load-test
           ports:
             - containerPort: 8080
