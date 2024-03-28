@@ -12,7 +12,13 @@ data:
       stdout: true
       level: "debug"
 
-    scheduler: 
+    scheduler:
       name: cloud-first-scheduler
       namespace: cloud-first-scheduler
-      algorithm: cloud-first 
+      algorithm: "random"
+      informerSyncPeriod: "15s"
+
+    connector:
+      mode: "in-cluster"
+      masterURL: ""
+      kubeConfigPath: ""

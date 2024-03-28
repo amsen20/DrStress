@@ -13,6 +13,12 @@ data:
       level: "debug"
 
     scheduler:
-      name: smallest-fitting-edge-node
+      name: smallest-edge-node-first 
       namespace: smallest-edge-node-first
-      algorithm: smallest-fitting-edge-node 
+      algorithm: "random"
+      informerSyncPeriod: "15s"
+
+    connector:
+      mode: "in-cluster"
+      masterURL: ""
+      kubeConfigPath: ""

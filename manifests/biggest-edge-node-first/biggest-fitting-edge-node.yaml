@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: scheduler-general-config
-  namespace: biggest-edge-node-first
+  namespace: biggest-fitting-edge-node
 data:
   config.yaml: |-
     app:
@@ -13,6 +13,12 @@ data:
       level: "debug"
 
     scheduler:
-      name: biggest-edge-node-first-scheduler
-      namespace: biggest-edge-node-first
-      algorithm: biggest-fitting-edge-node 
+      name: biggest-fitting-edge-node 
+      namespace: biggest-fitting-edge-node
+      algorithm: "random"
+      informerSyncPeriod: "15s"
+
+    connector:
+      mode: "in-cluster"
+      masterURL: ""
+      kubeConfigPath: ""

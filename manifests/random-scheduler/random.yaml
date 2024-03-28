@@ -12,7 +12,13 @@ data:
       stdout: true
       level: "debug"
 
-    scheduler: 
-      name: random-scheduler 
+    scheduler:
+      name: random-scheduler
       namespace: random-scheduler
-      algorithm: random
+      algorithm: "random"
+      informerSyncPeriod: "15s"
+
+    connector:
+      mode: "in-cluster"
+      masterURL: ""
+      kubeConfigPath: ""

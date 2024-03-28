@@ -24,7 +24,7 @@ spec:
       containers:
       - name:  custom-scheduler
         image:  noisyboy9/custom_k8s_scheduler:latest
-        imagePullPolicy: IfNotPresent
+        imagePullPolicy: Always
         volumeMounts:
         - name: config-map
           mountPath: configs/general.yaml
