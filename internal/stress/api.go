@@ -41,8 +41,8 @@ func (a *API) StressAPI() {
 
 	for _, intervalData := range a.IntervalsData {
 		fmt.Printf("Starting stress test for %s\n", a.Name)
-		fmt.Printf("API endpoint: %s\n", a.Endpoint)
 		fmt.Printf("Interval: %f milliseconds\n", intervalData.Length)
+		fmt.Printf("API endpoint: %s\n", a.Endpoint)
 		fmt.Printf("Period: %f milliseconds\n", intervalData.ApiCallPeriod)
 
 		cycleDuration := time.Duration(intervalData.Length*1000) * time.Microsecond
