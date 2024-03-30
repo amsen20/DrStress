@@ -355,3 +355,4 @@ zsdoc/data
 # End of https://www.toptal.com/developers/gitignore/api/go,goland,vim,eclipse,visualstudiocode,macos,windows,linux,zsh
 
 stress
+!*/stress

@@ -62,7 +62,7 @@ func (a *API) StressAPI() {
 					fmt.Printf("%s call faced following error:\n%s\n", a.Name, err.Error())
 				} else {
 					a.Succeeded += 1
-					fmt.Printf("%s call OK\n", a.Name)
+					// fmt.Printf("%s call OK\n", a.Name)
 				}
 			case <-endPeriod.C:
 				fmt.Printf("finished %s", a.Name)
