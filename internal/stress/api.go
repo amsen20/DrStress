@@ -41,8 +41,8 @@ func (a *API) StressAPI() {
 
 	for _, intervalData := range a.IntervalsData {
 		fmt.Printf("Starting stress test for %s\n", a.Name)
-		fmt.Printf("API endpoint: %s\n", a.Endpoint)
 		fmt.Printf("Interval: %f milliseconds\n", intervalData.Length)
+		fmt.Printf("API endpoint: %s\n", a.Endpoint)
 		fmt.Printf("Period: %f milliseconds\n", intervalData.ApiCallPeriod)
 
 		cycleDuration := time.Duration(intervalData.Length*1000) * time.Microsecond
@@ -62,7 +62,7 @@ func (a *API) StressAPI() {
 					fmt.Printf("%s call faced following error:\n%s\n", a.Name, err.Error())
 				} else {
 					a.Succeeded += 1
-					fmt.Printf("%s call OK\n", a.Name)
+					// fmt.Printf("%s call OK\n", a.Name)
 				}
 			case <-endPeriod.C:
 				fmt.Printf("finished %s", a.Name)
