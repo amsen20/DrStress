@@ -14,21 +14,24 @@ function run_scenario() {
   echo "----------------------------------------------------"
   echo "scenario name: $1"
   echo "start time: $(date '+%Y-%m-%d %H:%M:%S')"
+  kubectl apply -f ./manifests/ecmus-scheduler
+  sleep 2m
   ./stress --path $1
   sleep 5m
-  kubectl rollout restart deploy $scheduler_deployment_name -n $namespace
+  kubectl delete -f ./manifests/ecmus-scheduler
+  sleep 2m
   echo "end time: $(date '+%Y-%m-%d %H:%M:%S')"
   echo "----------------------------------------------------"
 }
 
 
-echo "running normal scenarios ..."
-for filename in $normal_scenarios_path; do
-  run_scenario $filename
-  echo "going to sleep between scenarios (5m)"
-  sleep 5m
-done
-echo "normal scenarios are successfully ran ..."
+#echo "running normal scenarios ..."
+#for filename in $normal_scenarios_path; do
+#  run_scenario $filename
+#  echo "going to sleep between scenarios (5m)"
+#  sleep 5m
+#done
+#echo "normal scenarios are successfully ran ..."
 
 echo "running wavy scenarios ... "
 for filename in $wavy_scenarios_path; do

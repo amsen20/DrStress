@@ -1,0 +1,29 @@
+# https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecmus-scheduler
+  namespace: ecmus
+  labels:
+    app: ecmus-scheduler
+spec:
+  selector:
+    matchLabels:
+      app: ecmus-scheduler
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ecmus-scheduler
+    spec:
+      nodeName: uq7g5t611-01
+      serviceAccountName: scheduling
+      imagePullSecrets:
+        - name: github-container-registry
+      containers:
+        - name: ecmus-scheduler
+          image: noisyboy9/ecmus:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              name: ecmus-status
