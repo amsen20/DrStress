@@ -15,6 +15,7 @@ function run_scenario() {
   echo "scenario name: $1"
   echo "start time: $(date '+%Y-%m-%d %H:%M:%S')"
   ./stress --path $1
+  sleep 5m
   kubectl rollout restart deploy $scheduler_deployment_name -n $namespace
   echo "end time: $(date '+%Y-%m-%d %H:%M:%S')"
   echo "----------------------------------------------------"
