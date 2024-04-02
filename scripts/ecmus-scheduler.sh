@@ -1,32 +1,13 @@
 #!/bin/sh
 function run_ecmus_scheduler() {
-  setup_env_random_scheduler;
-  sleep 1m
-
-  execute_scenarios;
-  cleanup_env_random_scheduler;
+  execute_scenarios_ecmus;
 }
 
-function setup_env_ecmus_scheduler() {
+
+function execute_scenarios_ecmus() {
   manifests_path="$(pwd)/manifests/ecmus-scheduler/"
-  echo "************************************************************************"
-  echo "setting up env for ecmus-scheduler"
-  kubectl apply -f $manifests_path
-}
-
-
-function execute_scenarios() {
   echo "execute_scenarios for ecmus scheduler"
-  run_normal_scenarios
-  run_wavy_scenarios
+  run_normal_scenarios $manifests_path
+  run_wavy_scenarios $manifests_path
 }
 
-function cleanup_env_ecmus_scheduler() {
-  manifests_path="$(pwd)/manifests/ecmus-scheduler/"
-  echo "cleaning up env after ecmus-scheduler run"
-  kubectl delete  -f $manifests_path
-
-  echo "clean up complete, going to sleep (5m)"
-  sleep 5m
-  echo "************************************************************************"
-}

@@ -1,5 +1,6 @@
 #!/bin/bash
 source ./scripts/utils.sh
+source ./scripts/ecmus-scheduler.sh
 source ./scripts/default-scheduler.sh
 source ./scripts/random-scheduler.sh
 source ./scripts/biggest-edge-node-first.sh
@@ -24,7 +25,6 @@ function run() {
   sleep 5m
 
   run_cloud_node_first_scheduler > logs/cloud-first/run_cloud_first_scheduler.txt 2> logs/cloud-first/run_cloud_first_scheduler_err.txt
-  sleep 5m
 }
 
 run;
