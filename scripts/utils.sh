@@ -32,14 +32,14 @@ function run_scenario() {
   echo "----------------------------------------------------"
   echo "scenario name: $1"
 
-  echo "kubectl apply -f $manifests_path"
+  kubectl apply -f $manifests_path
   sleep 2m
 
   echo "start time: $(date '+%Y-%m-%d %H:%M:%S')"
-  echo "./stress --path $1"
+  ./stress --path $1
   sleep 5m
 
-  echo "kubectl delete -f $manifests_path"
+  kubectl delete -f $manifests_path
   sleep 1m
 
   echo "end time: $(date '+%Y-%m-%d %H:%M:%S')"
