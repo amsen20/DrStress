@@ -1,5 +1,6 @@
 #!/bin/zsh
 function run_ecmus_no_migration_scheduler() {
+  echo "here"
   execute_scenarios_ecmus_no_migration;
 }
 

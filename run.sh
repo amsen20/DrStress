@@ -1,6 +1,6 @@
 #!/bin/bash
 source ./scripts/utils.sh
-source ./scripts/ecmus-no-migrations.sh
+source ./scripts/ecmus-no-migration.sh
 source ./scripts/ecmus-scheduler.sh
 source ./scripts/default-scheduler.sh
 source ./scripts/random-scheduler.sh
