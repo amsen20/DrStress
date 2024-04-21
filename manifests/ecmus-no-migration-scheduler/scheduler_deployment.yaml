@@ -23,7 +23,7 @@ spec:
       containers:
         - name: ecmus-no-migration-scheduler
           image: noisyboy9/ecmus:no-migration
-          imagePullPolicy: Always
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
               name: ecmus-status
