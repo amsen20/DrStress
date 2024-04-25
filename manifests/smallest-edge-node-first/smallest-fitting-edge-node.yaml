@@ -13,9 +13,9 @@ data:
       level: "debug"
 
     scheduler:
-      name: smallest-edge-node-first 
+      name: smallest-fitting-edge-node
       namespace: smallest-edge-node-first
-      algorithm: "smallest-fitting-edge-node-first"
+      algorithm: "smallest-fitting-edge-node"
       informerSyncPeriod: "15s"
 
     connector:
