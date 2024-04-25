@@ -22,14 +22,14 @@ function run() {
   run_random_scheduler > logs/random/random_scheduler.txt 2> logs/random/random_scheduler_err.txt
   sleep 5m
 
-  run_biggest_edge_node_first_scheduler > logs/biggest-fitting/biggest_edge_node_first_scheduler.txt 2> logs/biggest-fitting/biggest_edge_node_first_scheduler_err.txt
-  sleep 5m
-
-  run_smallest_edge_node_first_scheduler > logs/smallest-fitting/smallest_edge_node_first_scheduler.txt 2> logs/smallest-fitting/smallest_edge_node_first_scheduler_err.txt
-  sleep 5m
-
-  run_cloud_node_first_scheduler > logs/cloud-first/run_cloud_first_scheduler.txt 2> logs/cloud-first/run_cloud_first_scheduler_err.txt
-  sleep 5m
+#  run_biggest_edge_node_first_scheduler > logs/biggest-fitting/biggest_edge_node_first_scheduler.txt 2> logs/biggest-fitting/biggest_edge_node_first_scheduler_err.txt
+#  sleep 5m
+#
+#  run_smallest_edge_node_first_scheduler > logs/smallest-fitting/smallest_edge_node_first_scheduler.txt 2> logs/smallest-fitting/smallest_edge_node_first_scheduler_err.txt
+#  sleep 5m
+#
+#  run_cloud_node_first_scheduler > logs/cloud-first/run_cloud_first_scheduler.txt 2> logs/cloud-first/run_cloud_first_scheduler_err.txt
+#  sleep 5m
 }
 
 run;

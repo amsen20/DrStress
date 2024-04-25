@@ -17,7 +17,10 @@ data:
       namespace: random-scheduler
       algorithm: "random"
       informerSyncPeriod: "15s"
-
+      edgeAnnotationKey: "momtaz/cluster-type"
+      edgeAnnotationValue: "edge"
+    
+    
     connector:
       mode: "in-cluster"
       masterURL: "172.20.2.4"
