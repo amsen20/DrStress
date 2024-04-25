@@ -20,5 +20,5 @@ data:
 
     connector:
       mode: "in-cluster"
-      masterURL: ""
+      masterURL: "172.20.2.4"
       kubeConfigPath: ""
