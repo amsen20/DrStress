@@ -15,7 +15,7 @@ data:
     scheduler:
       name: biggest-fitting-edge-node 
       namespace: biggest-fitting-edge-node
-      algorithm: "random"
+      algorithm: "biggest-fitting-edge-node"
       informerSyncPeriod: "15s"
 
     connector:

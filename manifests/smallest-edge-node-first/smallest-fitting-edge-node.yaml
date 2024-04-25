@@ -15,7 +15,7 @@ data:
     scheduler:
       name: smallest-edge-node-first 
       namespace: smallest-edge-node-first
-      algorithm: "random"
+      algorithm: "smallest-fitting-edge-node-first"
       informerSyncPeriod: "15s"
 
     connector:

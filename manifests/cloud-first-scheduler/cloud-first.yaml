@@ -15,7 +15,7 @@ data:
     scheduler:
       name: cloud-first-scheduler
       namespace: cloud-first-scheduler
-      algorithm: "random"
+      algorithm: "cloud-first"
       informerSyncPeriod: "15s"
 
     connector:
