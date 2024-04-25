@@ -13,8 +13,8 @@ data:
       level: "debug"
 
     scheduler:
-      name: biggest-fitting-edge-node 
-      namespace: biggest-fitting-edge-node
+      name: biggest-edge-node-first-scheduler
+      namespace: biggest-edge-node-first
       algorithm: "biggest-fitting-edge-node"
       informerSyncPeriod: "15s"
 
