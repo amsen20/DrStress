@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: d-deployment
-  namespace: ecmus-no-migration
+  namespace: ecmus-no-qos
   labels:
     app: D-app
 spec:
