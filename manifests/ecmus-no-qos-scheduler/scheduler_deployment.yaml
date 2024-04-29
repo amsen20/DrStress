@@ -1,0 +1,29 @@
+# https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ecmus-no-qos-scheduler
+  namespace: ecmus-no-qos
+  labels:
+    app: ecmus-no-qos-scheduler
+spec:
+  selector:
+    matchLabels:
+      app: ecmus-no-qos-scheduler
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ecmus-no-qos-scheduler
+    spec:
+      nodeName: uq7g5t611-01
+      serviceAccountName: scheduling
+      imagePullSecrets:
+        - name: github-container-registry
+      containers:
+        - name: ecmus-no-qos-scheduler
+          image: noisyboy9/ecmus:no-qos
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+              name: ecmus-status

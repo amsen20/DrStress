@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: a-service
+  namespace: ecmus-no-qos
+  annotations:
+    prometheus.io/port: "service-port"
+    prometheus.io/scrape: "true"
+  labels:
+    app.kubernetes.io/part-of: dms
+spec:
+  selector:
+    app: A-app
+  type: NodePort
+  ports:
+    - name: service-port
+      protocol: TCP
+      port: 80
+      nodePort: 30000
+      targetPort: "go-app-port"

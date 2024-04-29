@@ -1,0 +1,16 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: service-monitor
+  namespace: default
+spec:
+  endpoints:
+    - interval: 15s
+      port: "service-port"
+      scrapeTimeout: 14s
+  namespaceSelector:
+    matchNames:
+      - ecmus-no-qos
+  selector:
+    matchLabels:
+      app.kubernetes.io/part-of: dms
