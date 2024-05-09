@@ -17,9 +17,6 @@ data:
       namespace: cloud-first-scheduler
       algorithm: "cloud-first"
       informerSyncPeriod: "15s"
-      edgeAnnotationKey: "momtaz/cluster-type"
-      edgeAnnotationValue: "edge"
-
 
     connector:
       mode: "in-cluster"

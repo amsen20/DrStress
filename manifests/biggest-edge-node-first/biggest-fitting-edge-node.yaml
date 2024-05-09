@@ -17,9 +17,6 @@ data:
       namespace: biggest-edge-node-first
       algorithm: "biggest-fitting-edge-node"
       informerSyncPeriod: "15s"
-      edgeAnnotationKey: "momtaz/cluster-type"
-      edgeAnnotationValue: "edge"
-
 
     connector:
       mode: "in-cluster"
