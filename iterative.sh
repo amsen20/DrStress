@@ -7,6 +7,7 @@ source ./scripts/smallest-edge-node-first.sh
 iteration_count=1
 function create_scenario_files() {
   echo "create scenarios"
+  git submodule update --recursive --remote
   cd genny
   rm -rf ./out
   bash basic.sh
@@ -15,10 +16,18 @@ function create_scenario_files() {
 
 function move_scenario_files() {
   echo "move scenario files"
+
+  echo "rm"
   rm -rf ./scenarios
+
+  echo "mkdir 1"
   mkdir ./scenarios
+
+  echo "mkdir 2"
   mkdir ./scenarios/normal
-  cp ./genny/out/normal/* ./scenarios/normal/
+
+  echo "cp recursive"
+  cp -r ./genny/out/normal/ ./scenarios/normal/
 }
 
 function run() {
@@ -29,15 +38,15 @@ function run() {
 
     run_ecmus_scheduler 1> logs/ecmus/"ecmus_scheduler_${i}".txt \
                         2> logs/ecmus/"ecmus_scheduler_${i}_err.txt";
-    sleep 5m;
+#    sleep 5m;
 
     run_biggest_edge_node_first_scheduler 1> logs/biggest-fitting/"biggest_edge_node_first_scheduler_${i}.txt" \
                                           2> logs/biggest-fitting/"biggest_edge_node_first_scheduler_err_${i}.txt";
-    sleep 5m;
+#    sleep 5m;
 
     run_smallest_edge_node_first_scheduler 1> logs/smallest-fitting/"smallest_edge_node_first_scheduler_${i}.txt" \
                                            2> logs/smallest-fitting/"smallest_edge_node_first_scheduler_err_${i}.txt";
-    sleep 5m;
+#    sleep 5m;
 
     echo "---------------"
   done
