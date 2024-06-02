@@ -1,0 +1,3 @@
+[submodule "genny"]
+	path = genny
+	url = git@github.com:amsen20/genny.git
