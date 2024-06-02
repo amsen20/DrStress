@@ -2,8 +2,7 @@
 
 
 function run_biggest_edge_node_first_scheduler() {
-  echo "hello world from biggest edge"
-#  execute_scenarios_biggest_fitting_edge_node_first_scheduler;
+  execute_scenarios_biggest_fitting_edge_node_first_scheduler;
 }
 
 function execute_scenarios_biggest_fitting_edge_node_first_scheduler() {

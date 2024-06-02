@@ -1,6 +1,5 @@
 function run_smallest_edge_node_first_scheduler() {
-  echo "hello world from smallest_edge"
-#  execute_scenarios_smallest_edge_node;
+  execute_scenarios_smallest_edge_node;
 }
 
 function execute_scenarios_smallest_edge_node() {

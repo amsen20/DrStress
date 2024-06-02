@@ -1,7 +1,6 @@
 #!/bin/sh
 function run_ecmus_scheduler() {
-  echo "hello world from ecmus"
-#  execute_scenarios_ecmus;
+  execute_scenarios_ecmus;
 }
 
 
