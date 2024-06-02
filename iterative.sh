@@ -6,6 +6,7 @@ source ./scripts/smallest-edge-node-first.sh
 
 iteration_count=1
 function create_scenario_files() {
+  echo "create scenarios"
   git submodule update --recursive --remote
   cd genny
   rm -rf ./out
@@ -14,6 +15,7 @@ function create_scenario_files() {
 }
 
 function move_scenario_files() {
+  echo "move scenario files"
   rm -rf ./scenarios
   mkdir ./scenarios
   mkdir ./scenarios/normal
