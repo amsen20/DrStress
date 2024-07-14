@@ -1,4 +1,3 @@
-# https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -16,10 +15,9 @@ spec:
       labels:
         app: ecmus-scheduler
     spec:
-      nodeName: uq7g5t611-01
+      restartPolicy: Always
+      nodeName: "uq7g5t611-01"
       serviceAccountName: scheduling
-      imagePullSecrets:
-        - name: github-container-registry
       containers:
         - name: ecmus-scheduler
           image: noisyboy9/ecmus:latest
